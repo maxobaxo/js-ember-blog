@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('admin');
+  this.route('edit-post');
 });
 
 export default Router;
