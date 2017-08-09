@@ -3,6 +3,7 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -12,6 +13,35 @@ You will need the following things properly installed on your computer.
 * [Bower](https://bower.io/)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+
+## Planning
+
+1. Configuration/Dependencies
+_In addition to the above Prerequisites, this app uses the following Dependencies:_
+  * Bootstrap
+  * jQuery
+
+2. Specifications
+  * Reader can view all blog posts on homepage.
+  * User can create new blog post.
+  * User can edit existing blog post.
+  * User can delete existing blog post.
+  * Links to About and Contact page are always present.
+
+3. Integration
+  * Initial route to index.hbs template
+  * Index.hbs template displays links for optional routes to
+    * static templates about.hbs and contact.hbs
+    * admin portal, which integrates add/update/delete post functionality.
+
+4. UX/UI
+  * Include bootstrap to be used in application.hbs template.
+  * Develop custom style.
+
+5. Polish
+  * Refactor index.hbs with hide/show feature for each post.
+  * Additional attributes for post model.
+  * Make README awesome.
 
 ## Installation
 
