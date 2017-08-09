@@ -1,9 +1,11 @@
 <h2>Blog Posts</h2>
 {{new-post savePost="savePost"}}
-{{#each model as |post|}}
-  <h3>{{post.title}}</h3>
-  <p>{{post.body}}</p>
-  {{#link-to 'edit-post' post.id}}
-    Edit Post
-  {{/link-to}}
-{{/each}}
+<br>
+<ul>
+  {{#each model as |post|}}
+      <li>
+        {{post.title}}
+        {{update-post post=post update="update"}} <br>
+      </li>
+  {{/each}}
+</ul>

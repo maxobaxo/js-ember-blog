@@ -1,17 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  updatePost: false,
+  updatePostForm: false,
   actions: {
-    updateFormShow() {
-      this.set('updatePost', true);
+    updatePostForm() {
+      this.set('updatePostForm', true);
     },
     update(post) {
       var params = {
         title: this.get('title'),
         body: this.get('body')
       };
-      this.set('updatePost', false);
+      this.set('updatePostForm', false);
       this.sendAction('update', post, params);
     }
   }

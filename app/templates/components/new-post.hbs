@@ -1,4 +1,4 @@
-{{#if newPost}}
+{{#if addNewPost}}
   <form>
     <div class="form-group">
       <label for="title">Title</label>
@@ -11,5 +11,5 @@
     <button {{action 'savePost'}}>Save</button>
   </form>
 {{else}}
-  <button {{action 'postFormShow'}}>Add Post</button>
+  <button {{action 'postFormShow'}}>New Post</button>
 {{/if}}

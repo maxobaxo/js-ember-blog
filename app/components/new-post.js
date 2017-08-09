@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  newPost: false,
+  addNewPost: false,
   actions: {
     postFormShow() {
-      this.set('newPost', true);
+      this.set('addNewPost', true);
     },
     savePost() {
       var params = {
