@@ -4,6 +4,7 @@
   {{#each model as |post|}}
   <li>
     <h3>{{#link-to 'read-post' post.id}}{{post.title}}{{/link-to}}</h3>
+    {{post.body}}
   </li>
   {{/each}}
 </ul>
