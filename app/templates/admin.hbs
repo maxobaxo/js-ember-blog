@@ -4,8 +4,7 @@
 <ul>
   {{#each model as |post|}}
       <li>
-        {{post.title}}
-        {{update-post post=post update="update"}} <br>
+        <h2>{{#link-to 'posts' post.id}}{{post.title}}{{/link-to}}</h2>
       </li>
   {{/each}}
 </ul>
