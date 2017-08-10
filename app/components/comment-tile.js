@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       this.set('updateCommentForm', false);
       this.set('author', "");
       this.set('content', "");
-      this.sendAction('update', comment, params)
+      this.sendAction('update', comment, params);
     },
     delete(comment) {
       if(confirm('Are you sure you want to delete this comment?')) {
