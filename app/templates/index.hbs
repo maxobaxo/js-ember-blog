@@ -2,7 +2,8 @@
 <br>
 <ul class="list-unstyled">
   {{#each model as |post|}}
-    <h3>{{post.title}}</h3>
-    <li>{{post.body}}</li>
+  <li>
+    <h3>{{#link-to 'read-post' post.id}}{{post.title}}{{/link-to}}</h3>
+  </li>
   {{/each}}
 </ul>
