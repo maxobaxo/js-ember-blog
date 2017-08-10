@@ -13,6 +13,8 @@ export default Ember.Component.extend({
         post: this.get('post')
       };
       this.set('addNewComment', false);
+      this.set('author', "");
+      this.set('content', "");
       this.sendAction('saveComment', params);
     }
   }
