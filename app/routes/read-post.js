@@ -13,6 +13,10 @@ export default Ember.Route.extend({
         return post.save();
       });
       this.transitionTo('read-post', post);
+    },
+    destroyComment(comment) {
+      comment.destroyRecord();
+      this.transitionTo('read-post');
     }
   }
 });
